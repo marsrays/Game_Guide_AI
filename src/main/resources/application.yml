@@ -1,0 +1,22 @@
+telegram:
+  bot:
+    webhook-baseurl: https://postfemoral-mellowly-irina.ngrok-free.dev
+    secret-token: thesecrettoken
+    username: game_guide_ai_bot
+    token: 9999999999:TEST-your_bot_token_here
+
+server:
+  port: 8081
+
+langchain4j:
+    api-key: sk-proj-YOUR-AI-API-KEY
+    category-model-name: gpt-4.1-mini
+    analytics-model-name: gpt-4.1
+logging:
+  file:
+    path: /var/log/ai
+  level:
+    game.guide.ai: INFO
+    org.telegram: INFO
+  pattern:
+    file: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){yellow} %clr(%5level){blue} [%clr(%thread){green}] %clr(%logger{15}:%line){magenta} - %clr(%msg%n){cyan}'
